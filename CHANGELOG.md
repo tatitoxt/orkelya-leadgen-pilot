@@ -6,7 +6,9 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
-_Nothing yet — see the [roadmap](docs/ROADMAP.md)._
+### Docs
+- `SECURITY.md`: added security scan notes (components, accepted DoS risk,
+  localhost-only GUI).
 
 ## [1.0.0] - 2026-06-11
 
