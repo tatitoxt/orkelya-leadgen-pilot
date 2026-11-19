@@ -40,3 +40,14 @@ Because it processes data fetched from third-party sources, the security surface
 is mostly **parsing untrusted input** (HTML, JSON, CSV, geo data). Reports about
 crashes, resource exhaustion, or injection from crafted source data are in scope
 and welcome.
+
+## Security scan notes
+
+Added 2026-11-19 with the maintainer's answers.
+
+| Component | Repository | Code it covers |
+|---|---|---|
+| Leadgen Engine & GUI | orkelya-leadgen-pilot | `leadgen/` (sources, audit, cache, exporters), `gui/` (Flask, optional pywebview), `Dockerfile` (`python:3.11-slim`, `EXPOSE 5000`) |
+
+- Denial of service (crashes, resource exhaustion) is accepted risk.
+- The GUI stays bound to localhost (see above). No infrastructure repository exists.
